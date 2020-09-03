@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(26, 26, 26);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3vh;
+}
+
+h1 {
+    padding: 20px;
+    color: rgb(253, 149, 29);
+    font-size: 4em;
+    text-shadow: 2px 1px 2px rgb(94, 94, 94);
+    text-transform: uppercase;
+}
+
+.contInputs {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#input {
+    width: 300px;
+    height: 25px;
+    font-size: 1.3em;
+    margin-top: 10px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    text-align: center;
+}
+
+#findButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 30px;
+    padding: 10px 15px;
+    border: 2px solid  rgb(212, 109, 24);
+    border-radius: 10px;
+    margin:10px;
+    font-size: 1em;
+    font-weight: bold;
+    color: rgb(26, 26, 26);
+    background-color: rgb(253, 149, 29);
+    box-shadow: 1px 1px 2px rgb(94, 94, 94);
+}
+
+span {
+    font-size: 1.7em;
+    color: white;
+}
+
+
+/* Desktop grande */
+@media (min-width: 1200px) {
+    body {
+        background-color: rgb(26, 26, 26);
+    }    
+}
+
+/* Tablet em retrato a paisagem e desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+    body {
+        background-color: #fa800e;
+    } 
+
+    h1 {
+        color:rgb(26, 26, 26);
+    }
+
+    #findButton {
+        width: 250px;
+        height: 50px;
+        font-size: 1.2em;
+        border: 2px solid rgb(66, 66, 66);
+        color: white;
+        background-color: rgb(26, 26, 26);
+    }
+}
+
+/* Telefones em paisagem a tablet em retrato */
+@media (max-width: 767px) {
+    body {
+        background-color: rgb(26, 26, 26);
+    } 
+
+    #findButton {
+        width: 250px;
+        height: 50px;
+        font-size: 1.2em;
+    }
+}
+
+/* Telefones em paisagem e abaixo */
+@media (max-width: 480px) {
+    body {
+        background-color: #d64907;
+    } 
+
+    h1 {
+        color:rgb(26, 26, 26);
+        font-size: 3em;
+    }
+
+    #input {
+        width: 200px;
+        font-size: 2em;
+        font-size: 1.1em;
+    }
+
+    #findButton {
+        border: 2px solid rgb(66, 66, 66);
+        color: white;
+        background-color: rgb(26, 26, 26);
+        width: 200px;
+        height: 70px;
+    }
+}
